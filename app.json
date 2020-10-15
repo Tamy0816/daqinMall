@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/detail/detail",
+    "pages/cart/cart"
+  ],
+  "tabBar": {
+    "selectedColor": "007ACC",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "common/images/home.png",
+        "selectedIconPath": "common/images/home-select.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "common/images/i-order.png",
+        "selectedIconPath": "common/images/i-order-select.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "common/images/cart.png",
+        "selectedIconPath": "common/images/cart-select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "common/images/my.png",
+        "selectedIconPath": "common/images/my-select.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#007ACC",
+    "navigationBarTitleText": "大勤商城",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,47 @@
+<!--pages/home/home.wxml-->
+<!-- <image src="../../common/images/daqinbg1.jpg"></image>
+<image src="../../common/images/daqinbg1.jpg"></image> -->
+
+<view class="page-box">
+    <!-- 轮播图 -->
+    <view class="swipper-box">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+            duration="{{duration}}">
+            <block wx:for="{{background}}" wx:key="*this">
+                <swiper-item>
+                    <!-- <view class="swiper-item {{item}}"></view> -->
+                    <image src="{{item}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 导航栏 -->
+    <view class="nav-box">
+        <scroll-view scroll-x="true">
+            <view class="nav">
+                <view class="item current" bindtap="getUserList">全部</view>
+                <view class="item">洗衣液</view>
+                <view class="item">洗手液</view>
+                <view class="item">洗碗液</view>
+                <view class="item">厨卫清洁</view>
+                <view class="item">护理液</view>
+                <view class="item">消毒液</view>
+                <view class="item">其它</view>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 商品列表 -->
+
+    <view class="goods-list">
+        <view class="item" wx:for="{{goodsData}}">
+            <view class="pic">
+                <image src="{{item.image}}"></image>
+            </view>
+            <view class="content">
+                <view class="title">{{item.title}}</view>
+                <view class="desc">{{item.desc}}</view>
+                <view class="price">{{item.price}}</view>
+            </view>
+        </view>
+    </view>
+</view>
